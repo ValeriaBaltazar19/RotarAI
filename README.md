@@ -1,5 +1,5 @@
 # RotarAI
-Pagina Web del Caso 2
+Pagina Web del Caso 2, link de la pagina http://127.0.0.1:5501/index/pagina_1_ingles.html
 
 Descripción
 Esta página web está dedicada a Rotar AI, una plataforma que ofrece soluciones de chatbot impulsadas por inteligencia artificial (IA) para mejorar la atención al cliente. Utiliza tecnología avanzada, como GPT-4, para optimizar la comunicación y reducir la carga de trabajo del personal.
