@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/css/estilo_es.css">
+    <script defer src="/javascripts/animacion.js"></script>
+    <script defer src="/traducciones.js"></script>
+
+</head>
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="clip-custom" clipPathUnits="objectBoundingBox">
+                <path d="M0.912651 0.0573776C0.912651 0.0573776 0.909518 0.00273227 0.870882 0H0.0804052C0.0355036 0 0 0.0232244 0 0.109291C0 0.414679 0.00626533 0.612921 0.00626533 0.892086C0.00626533 0.95766 0.028194 1 0.0804052 1C0.237863 1 0.414995 0.998644 0.560748 0.998644C0.689187 1.01367 0.586853 0.869154 0.683966 0.866129C0.727823 0.864763 0.819715 0.864763 0.922049 0.864763C0.922049 0.864763 0.998277 0.879791 0.998277 0.780063C0.998277 0.680335 1.00215 0.46257 0.998277 0.173499C0.997442 0.111203 0.952331 0.110657 0.952331 0.110657C0.912651 0.110657 0.912651 0.0573776 0.912651 0.0573776Z"/>
+            </clipPath>
+            <clipPath id="clip-rectangulo" clipPathUnits="objectBoundingBox">
+                <path d="M0.663285 0C0.584496 0.0028013 0.210408 -8.54833e-09 0.0750243 0C-0.0189429 0 0.00198814 0.0521009 0.00198814 0.320449C0.00198814 0.554623 -0.0149349 0.6 0.0750243 0.6H0.663285C0.823644 0.6 0.663285 0.480002 0.823644 0.480002H0.912713C0.984858 0.471709 1 0.459945 1 0.289076C0.994211 0.103642 0.982186 0.0964569 0.912713 0.0964569H0.823644C0.663285 0.0964569 0.801823 0 0.663285 0Z"/>
+            </clipPath>
+            <clipPath id="clip-cuadrochat" clipPathUnits="objectBoundingBox">
+                <path d="M0.0545871 0.0607278C0.122954 0.0632788 0.0630805 -0.00151715 0.123465 -0.00151708H0.219383H0.951526C0.951526 -0.00151708 0.973975 -0.00406815 0.988771 0.00613595C0.999485 0.0158298 0.999505 0.0312068 0.999485 0.0469523C0.999311 0.179146 0.998464 0.780848 0.998464 0.868381C0.998464 0.910218 0.997444 0.913789 0.949995 0.913789H0.764281C0.717342 0.913789 0.772444 0.997463 0.706628 0.997463L0.0397912 0.996503C0.0122402 0.996459 0.0086688 0.986748 0.0086688 0.986748C0.0086688 0.986748 0.00152588 0.977564 0.00152588 0.962768V0.100014C0.00152593 0.0484829 0.0163219 0.0607278 0.0545871 0.0607278Z"/>
+            </clipPath>
+            <clipPath id="clip-cuadro4" clipPathUnits="objectBoundingBox">
+                <path d="M1.97307 0.97713C1.93916 1.00928 1.86604 0.998132 1.86604 0.998132H0.90673C0.90673 0.998132 0.845981 1.00264 0.809147 0.972676C0.772529 0.942889 0.772946 0.89058 0.772946 0.89058V0.518286C0.772946 0.518286 0.780855 0.457506 0.743042 0.42728C0.705665 0.397404 0.638375 0.408188 0.638375 0.408188H0.112683C0.112683 0.408188 0.0531755 0.418816 0.0174607 0.384005C0.000934461 0.354731 0.000934467 0.301273 0.000934467 0.301273V0.0887151C0.000934467 0.0887151 -0.0059124 0.0388355 0.0174607 0.0180747C0.0431111 -0.00470895 0.112683 0.000891831 0.112683 0.000891831H1.13023C1.13023 0.000891831 1.18377 -0.00591368 1.21365 0.0180746C1.24374 0.042238 1.23804 0.0887151 1.23804 0.0887151V0.214722C1.23804 0.214722 1.2323 0.262335 1.2648 0.289818C1.29878 0.318557 1.36396 0.312092 1.36396 0.312092H1.86604C1.86604 0.312092 1.93837 0.301505 1.97307 0.333093C2.00388 0.361151 1.99982 0.408188 1.99982 0.408188V0.905854C1.99982 0.905854 2.00199 0.949712 1.97307 0.97713Z"/>
+            </clipPath>
+        </defs>
+    </svg>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="../imagenes/logo.png" alt="Rotar AI Logo" class="logo">
+            <span class="brand-name">Rotar AI</span>
+        </div>
+        
+        <ul class="menu">
+            <li><a href="#">Producto</a></li>
+            <li><a href="#">Soluciones</a></li>
+            <li><a href="#">Recursos</a></li>
+            <li><a href="#">Precios</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="#" class="login">Iniciar sección</a>
+            <a href="#" class="btn-demo">
+                Reservar una demostración
+                <img src="../imagenes/flecha.png" alt="Flecha" class="icon-flecha">
+            </a>
+        </div>
+    </nav>
+    <body>
+        <a href="pagina_1_ingles.html" class="translate-link">
+            <button class="translate-button">🌍 Traducir a Ingles</button>
+        </a>
+    <div class="recuadro hidden">
+        <div class="texto">
+            <h1>
+                El mejor compañero de <span class="resaltado">IA para atención <br>al cliente</span>
+                <div class="title-toggle-container">
+                    <div class="toggle-container">
+                        <div class="toggle-back"></div> 
+                        <div class="toggle-middle"></div> 
+                        <div class="toggle">
+                            <img src="../imagenes/logo.png" class="toggle-circle">
+                        </div>
+                    </div>
+                </div>
+            </h1>
+            <p>Adopte la tecnología AI chatbot en un GPT-4-apoyado <br> herramienta de comunicación para ayudar a sus <br> equipo y reducir su carga de trabajo.</p>
+        </div>
+        <div class="tag-container">
+            <div class="tag">
+                <img src="../imagenes/cuadra.png" alt="Chatbot Icon">
+                Chatbot
+            </div>
+            <div class="tag">
+                <img src="../imagenes/cubo.png" alt="GPT-4 Icon">
+                Chat GPT 4
+            </div>
+        </div>
+        
+        <div class="contenedor-molecula">
+            <img src="../imagenes/moleculas.JPG" class="rectangulo" style="clip-path: url(#clip-rectangulo); width: 380px; height: 210px;">
+            <div class="texto-superpuesto">
+                <h3>Guía: La IA de Rotar <br> Manual del tutor</h3>
+                <p>Todo lo que debe saber <br> sobre los primeros pasos de los chatbots.</p>
+                <a href="#" class="boton-leer">
+                    Leer artículo
+                    <img src="../imagenes/flechaderecha.png" class="icono-flecha">
+                </a>                
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <img src="../imagenes/señorita.jpg" class="imagen-curva" style="clip-path: url(#clip-custom); width: 350px; height: 350px;">
+            <button class="boton-play">
+                Ver tutorial ▶
+            </button>
+        </div>   
+        <div class="contenedor-rectangulonegro">
+            <img src="../imagenes/cuadronegro.jpg" class="rectangulo-negro">
+            <div class="texto-rectangulo-negro">
+                <h3>AI-driven<br>atención al cliente</h3>
+            </div>
+        </div>
+
+        <div class="contenedor-rectanguloverde">
+            <img src="../imagenes/fondo.JPG" class="rectangulo-verde">
+            <div class="texto-rectangulo-verde">
+                <h3>+500</h3>
+                <p>Grandes empresas utilizan Rotar AI para sus servicios</p>
+            </div>
+        </div>
+                    
+    </div>
+    
+    <div class="clientes">
+        <img src="../imagenessvg/Spotify.svg" alt="Spotify">
+        <img src="../imagenessvg/Microsoft.svg" alt="Microsoft">
+        <img src="../imagenessvg/McAfee.svg" alt="McAfee">
+        <img src="../imagenessvg/Google.svg" alt="Google">
+        <img src="../imagenessvg/fedex.svg" alt="FedEx">
+    </div>
+
+    <section class="recuadro2 hidden">
+        <h1>Ofrecer una experiencia de  <span class="highlight"> <br> alta calidad</span> al cliente</h1>
+        <p>Adopte la tecnología AI chatbot en un GPT-4-apoyado <br>herramienta de comunicación para ayudar a sus clientes, <br>capacitar a su equipo y reducir su carga de trabajo</p>
+    
+
+        <section class="chat-card">
+            <div class="user-info">
+                <img src="../personas/chico.png" alt="User Profile" class="profile-pic">
+                <span class="user-name">James Kokolomel</span>
+            </div>
+        
+            <button class="reset-password">Olvidé mi contraseña</button>
+        
+            <div class="bot-info">
+                <div class="bot-icon-container">
+                    <img src="../imagenes/logo.png" alt="Bot Icon" class="bot-icon">
+                </div>
+                <span class="bot-name">Rotar Robot</span>
+            </div>
+            
+            <div class="chat-box">
+                <div class="bot-message">
+                    <p>No te preocupes, todos hemos estado en una situación melancólica como esa. 
+                    Para restablecer tu contraseña, ve a la página de inicio de sesión y haz clic en ¿Has olvidado la contraseña?  
+                    A continuación, introduce la dirección de correo electrónico y síguela.</p>
+                </div>
+            </div>
+        
+            <div class="chat-footer">
+                <h2>Aumente las conversaciones un 96% con la IA</h2>
+                <p>Nuestros chatbots y herramientas de automatización basados en IA están aquí para ayudarle.</p>
+            </div>
+        </section>
+
+        <section class="live-chat-box">
+            <div class="live-chat-title">
+                <h2>Siempre disponible <br>a través de nuestro chat en vivo.</h2>
+                <p>Mejore la comunicación con<br>Live Chat en tiempo real.</p>
+            </div>
+        
+            <div class="live-chat-messages">
+                <div class="live-message">
+                    <img src="../personas/chico.png" alt="User Profile" class="live-avatar">
+                    <div class="live-message-content"></div>
+                </div>
+                <div class="live-message">
+                    <img src="../personas/chica.png" alt="User Profile" class="live-avatar">
+                    <div class="live-message-content"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="insights-section">
+            <div class="insights-card">
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="bg-circle" cx="50" cy="50" r="45"></circle>
+                        <circle class="fg-circle" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                    <div class="percentage">12,5%</div>
+                    <div class="subtext">CONVERSACIÓN <br>EMPLEADO</div>
+                </div>
+                <h2>Obtenga información valiosa de su audiencia</h2>
+                <p>Las estadísticas proporcionan información valiosa sobre cómo interactúan los clientes con Rotar AI.</p>
+            </div>
+        </section>
+        
+        <section class="communication-section">
+            <div class="communication-card">
+                <h2>Centralice su<br>comunicación</h2>
+                <p>Responda fácilmente a los chats de todos<br>de sus canales en una sola vista general.</p>
+                <div class="icons">
+                    <img src="../imagenes/whatsapp.png" alt="WhatsApp">
+                    <img src="../imagenes/mensajero.png" alt="Messenger">
+                    <img src="../imagenes/logo.png" alt="Central">
+                    <img src="../imagenes/gorjeo.png" alt="Twitter">
+                    <img src="../imagenes/instagram.png" alt="Instagram">
+                </div>
+            </div>
+        </section>
+        <section class="integration-section">
+            <div class="integration-card">
+                <img src="../imagenes/cuadroblanco.jpg" class="cuadro-blanco">
+                <div class="integration-icons">
+                    <img src="../imagenes/notion.svg" class="integration-icon integration-icon1">
+                    <img src="../imagenes/evernote.png" class="integration-icon integration-icon2">
+                    <img src="../imagenes/meet.png" class="integration-icon integration-icon3">
+                    <img src="../imagenes/teams.png" class="integration-icon integration-icon4">
+                </div>
+                <div class="text-content">
+                    <h2>Automatice su flujo de trabajo con nuestras integraciones</h2>
+                    <p>Conecte Rotar AI con su servicio de atención al cliente, ventas, marketing y herramientas de contratación mediante nuestra sencilla API, webhooks o Zapier integración.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="highlighted-section hidden">
+        <div class="rounded-box">
+            <p>A lo largo de todo el recorrido de compra de su cliente, Rotar AI le permite deleitarle en cada paso del camino, desde su primera visita hasta la compra final.</p>
+            <button class="cta-button">Comenzar ↗</button>
+        </div>
+    
+        <div class="main-content">
+            <h1>
+                <span class="highlight">Redefinir las</span> conversaciones <br>
+                y <span class="highlight">Mejorar la experiencia del </span> Usuario <br>
+            </h1>
+            <div class="icon-container"></div>
+        </div>
+    
+        <div class="info-section">
+            <div class="info-card">
+                <h3>Visitas</h3>
+                <p>Llegue a los visitantes de forma proactiva mediante mensajes personalizados<br>saludos de chatbot. Convierta las visitas al sitio web en ventas <br>oportunidades de venta.</p>
+            </div>
+            <div class="info-card">
+                <h3>Cultive</h3>
+                <p>Lleve a los clientes a una venta mediante <br>compras recomendadas y ofertas personalizadas.</p>
+            </div>
+            <div class="info-card">
+                <h3>Calificar</h3>
+                <p>Genere y cualifique prospectos automáticamente. <br>Transferencia a sus representantes de  <br>ventas en tiempo real para acortar el ciclo de ventas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="chat-section hidden">
+        <img src="../fondos/fondo-azul.png" class="fondo">
+        <div class="chat-container">
+            
+            <div class="chat-header">
+                <div class="chat-icon-container">
+                    <img src="../imagenes/logo.png" alt="Rotar Robot" class="chat-icon">
+                </div>
+                <div class="chat-info">
+                    <h2>Rotar Robot</h2>
+                    <span class="status">En línea</span>
+                </div>
+                <div class="chat-options">⋮</div>
+            </div>
+    
+            <div class="chat-body">
+                <div class="message-container">
+                    <div class="user-icon-container">
+                        <img src="../imagenes/logo.png" alt="User" class="user-icon">
+                    </div>
+                    <div class="message-box">
+                        <h2>Rotar Robot</h2>
+                        <p>No te preocupes, todos hemos estado en una situación melancólica como esa. Para restablecer tu contraseña, ve a la página de inicio de sesión y haz clic en ¿Has olvidado la contraseña? A continuación, introduce la dirección de correo electrónico y síguela.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="chat-actions">
+                <button class="chat-button">Soluciones</button>
+                <button class="chat-button">Servicios</button>
+                <button class="chat-button">Reservar una llamada</button>
+                <button class="chat-button">Reclame</button>
+            </div>
+    
+            <div class="chat-input">
+                <span class="emoji">😊</span>
+                <input type="text" placeholder="Type here">
+                <span class="attachment">📎</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="custom-container hidden">
+        <div class="custom-text-section">
+            <div class="custom-text-section">
+                <h1>Utilize  <span class="custom-highlight">plantillas </span><br>para poner en marcha <br>su proyecto</h1>
+            </div>
+            
+            <div class="custom-categories">
+                <button class="custom-btn">Comercio electrónico</button>
+                <button class="custom-btn">Educación</button>
+                <button class="custom-btn">Sanidad</button>
+                <button class="custom-btn">Finanzas</button>
+                <button class="custom-btn">HR</button>
+                <button class="custom-btn">Turismo</button>
+            </div>
+        </div>
+
+        <div class="custom-cards-container">
+            <div class="custom-card">
+                <div class="custom-card-image">
+                    <img src="../fondos/fondoblanco.jpg" alt="Chatbot for Marketing" style="clip-path: url(#clip-cuadrochat); width: 280px; height: 280px;">
+                    <div class="custom-chat-box">
+                        <p class="custom-message">¡¡¡Genial!!! Encantado de ayudarte a encontrar el plan adecuado para ti 😊.<br>¿Qué pretende hacer con Rotar AI?</p>
+                        <p class="custom-reply">Conseguir más clientes en mi página web</p>
+                    </div>
+                </div>
+                <h3>Chatbot para marketing</h3>
+                <p>Proporcionar recomendaciones y procesar transacciones en un chat.</p>
+                <button class="custom-btn">Pruebe la plantilla gratis →</button>
+            </div>
+
+            <div class="custom-card">
+                <div class="custom-card-image">
+                    <img src="../fondos/fondoceleste.png" alt="Chatbot for HR" style="clip-path: url(#clip-cuadrochat); width: 280px; height: 280px;">
+                    <div class="custom-chat-box">
+                        <p class="custom-message">¡Te has clasificado para la siguiente ronda de entrevistas, Álvarez! Por favor, hágame saber su disponibilidad ✨.</p>
+                        <p class="custom-reply">Entre las 14.00 y las 17.00 horas </p>
+                    </div>
+                </div>
+                <h3>Chatbot para HR</h3>
+                <p>Encuentre talento e interactúe con los candidatos de forma innovadora.</p>
+                <button class="custom-btn">Pruebe la plantilla gratis →</button>
+            </div>
+
+            <div class="custom-card">
+                <div class="custom-card-image">
+                    <img src="../fondos/fondorosa.jpg" alt="Chatbot for Sales" style="clip-path: url(#clip-cuadrochat); width: 280px; height: 280px;">
+                    <div class="custom-chat-box">
+                        <p class="custom-message">¡¡¡Genial!!! Optimicemos tu proceso y aumentemos las conversiones 🚀.</p>
+                        <p class="custom-reply">Empezar a automatizar mis ventas ahora</p>
+                    </div>
+                </div>
+                <h3>Chatbot para ventas</h3>
+                <p>Automatice las respuestas y aumente las conversiones para su empresa.</p>
+                <button class="custom-btn">Pruebe la plantilla gratis →</button>
+            </div>
+        </div>
+    </section>
+    <section class="hidden">
+        <div class="testimonial-container">
+            <img src="../cuadros/cuadroblanco.png" alt="cuadroblanco" class="background-frame"/>
+            
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <h1>Qué empresas de primer <br> nivel hablemos de nuestro <br> producto</h1>
+                    <p>Únase al creciente número de negocios y empresas que han experimentado el impacto transformador de nuestros servicios de chatbot.</p>
+                </div>
+    
+                <div class="testimonial-body">
+                    <div class="testimonial-card">
+                        <img src="../personas/retratochico.jpg" alt="Mbida Messi" style="clip-path: url(#clip-cuadrochat); width: 520px; height: 500px;">
+                        <div class="testimonial-info">
+                            
+                            <h3>Mbida Messi</h3>
+                            <p>Fundador ERC Music Market Store</p>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial-message">
+                        <img src="../cuadros/testimoniocuadro.png" alt="cuadrodel estimonio" class="background-verde"/>
+                            <div class="testimonial-tag">
+                                <h3>Testimonio de un cliente</h3>
+                                <p>Me sorprendió el nivel de asistencia que recibí del chatbot de inteligencia artificial proporcionado por ROTAR AI. Entendió rápidamente mis preguntas y me proporcionó respuestas precisas y útiles.</p>
+                            </div>
+                            <div class="fondocirculolinea">
+                                <img src="../imagenes/comillas.png" class="fondocirculo">
+                            </div>
+                    </div>
+    
+                    <div class="testimonial-nav">
+                        <button class="nav-button">1 / 4</button>
+                        <button class="more-testimonials">Ver más testimonios </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="custom-banner hidden">
+            <img src="../cuadros/sextocuadro.png" alt="sextocuadro" class="sextocuadro">
+            <div class="content">
+                <h1>Tome el control de su productividad <br> con un chatbot GPT-4 ahora</h1>
+                <p>Transforme su servicio de atención al cliente con la IA de Rotar y <br> Solución Chatbot con GPT-4. Pruébalo gratis ahora.</p>
+                <div class="button-container">
+                    <button class="btn black">Reserve una demostración →</button>
+                    <button class="btn outline">contactese con nosotros 📞</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer hidden">
+        <div class="footer-container">
+            <div class="footer-links">
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Rotar AI</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Biblioteca de herramientas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Condiciones de uso</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="company-info">
+                    <h2>Rotar AI</h2>
+                    <p>Estamos a la vanguardia del desarrollo de chatbot de IA, revolucionando la forma en que las empresas interactúan con sus clientes.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <button>Instagram</button>
+                    <button>LinkedIn</button>
+                    <button>Twitter</button>
+                    <button>Github</button>
+                </div>
+                <div class="copyright">
+                    <span>⚫ Rotar AI. Todos los derechos reservados</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="animacion.js"></script>
+
+</html>

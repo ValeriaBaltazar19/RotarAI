@@ -1,0 +1,1936 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f3f3;
+}
+
+/* Navbar principal */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+/* Logo y nombre */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 25px;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+/* Menú central */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+/* Sección derecha (Login + Botón) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Login */
+.login {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Botón "Book a demo" */
+.btn-demo {
+    background-color: #2dff81;
+    color: black;
+    font-weight: bold;
+    padding: 15px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Imagen dentro del botón */
+.icon-flecha {
+    width: 16px;
+    height: auto;
+}
+
+.btn-demo:hover {
+    background-color: #00cc55;
+}
+
+/* Contenedor principal */
+.recuadro {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+    max-width: 1400px;
+    margin: 40px auto;
+    align-items: flex-start;
+    gap: 0px;
+    min-height: 800px;
+}
+
+/* Título con resaltado */
+h1 {
+    font-size: 50px;
+}
+
+.resaltado {
+    background-color: #b7f8c9;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.title-toggle-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Reduce el espacio entre texto y toggle */
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar */
+    position: relative; /* 🔥 Asegurar que todo sea relativo a este */
+    width: 60px;
+    height: 30px;
+}
+
+
+.toggle-back, .toggle-middle, .toggle {
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+/* Capa trasera */
+.toggle-back {
+    top: -25%;
+    width: 130px;
+    height: 54px;
+    border: 1px solid black;
+    border-left-width: 9px;  /* Engorda más del lado izquierdo */
+    border-radius: 50px;
+    position: absolute;
+    left: 20px;
+    z-index: 0;
+}
+
+/* Capa del medio */
+.toggle-middle {
+    top: -25%;
+    width: 86px;
+    height: 53px;
+    border: 1px solid black;
+    border-left-width: 9px; /* Un poco menos gordo que el back */
+    border-radius: 50px;
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+}
+
+/* Toggle principal (Negro con logo) */
+.toggle {
+    top: -25%;
+    left: 8px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    z-index: 2;
+}
+
+/* Imagen dentro del toggle */
+.toggle-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: 5px;
+    position: relative;
+    z-index: 2;
+}
+.imagen-curva {
+    margin-top: -300px;
+    clip-path: url(#clip-custom);
+    transform: scaleX(2.2) scaleY(1.6) translateX(140px); /* Mueve la imagen a la izquierda */
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 1000px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios extra */
+}
+.contenedor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto h1{
+    flex: 1; /* Hace que el texto se ajuste automáticamente */
+    max-width: 50%; /* Ajusta el ancho máximo del texto */
+    font-size: 4rem; /* Ajusta el tamaño del texto */
+}
+.texto p{
+    flex: 1; /* Hace que el texto se ajuste automáticamente */
+    max-width: 50%; /* Ajusta el ancho máximo del texto */
+    font-size: 1.3rem; /* Ajusta el tamaño del texto */
+}
+.boton-play {
+    background-color: #04fc84 ;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 17px 65px;
+    font-size: 15px;
+    font-family: "Arial Black"; /* Cambia la fuente aquí */
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -95px; /* Ajusta la posición debajo de la imagen */
+    left: 69%;
+    transform: translateX(70%);
+}
+
+.rectangulo {
+    clip-path: url(#clip-rectangulo);
+    transform: scaleX(1.6) scaleY(2.2) translateX(-35px); /* Mueve la imagen a la izquierda */
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 1000px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios extra */
+}
+.recuadro {
+    position: relative; /* Contenedor padre */
+}
+
+.contenedor-molecula {
+    position: absolute; /* Se ajusta dentro del contenedor */
+    top: 74%;
+    left: 50%;
+    transform: translate(-136%, 1%); /* Centrar */
+    max-width: 100%;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: -110px; /* Ajusta la posición vertical */
+    left: -150px; /* Ajusta la posición horizontal */
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    font-family: sans-serif;
+}
+
+.texto-superpuesto h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: black; /* Título sólido en negro */
+    margin-bottom: 5px;
+}
+
+.texto-superpuesto p {  
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5); /* Texto con opacidad */
+}
+
+.contenedor-rectangulonegro {
+    position: relative;
+    width: 370px; /* Ajusta según necesites */
+    height: 195px; /* Ajusta según necesites */
+    border-radius: 30px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    margin-left: 1020px; /* Ajusta el valor según lo que necesites */
+    margin-top: 120px; /* Ajusta el valor según lo que necesites */
+}
+
+.rectangulo-negro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen se adapte bien */
+    display: block;
+}
+
+.texto-rectangulo-negro {
+    top: 45px;
+    position: absolute;
+    bottom: 15px; /* Ajusta la posición vertical */
+    left: 35px; /* Ajusta la posición horizontal */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 28px; /* Tamaño del texto */
+    font-weight: normal; /* Texto más delgado */
+    line-height: 1.2; /* Espaciado entre líneas */
+}
+
+
+.contenedor-rectanguloverde {
+    position: relative;
+    width: 370px; /* Ajusta según necesites */
+    height: 195px; /* Ajusta según necesites */
+    border-radius: 30px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    margin-left: 630px; /* Ajusta la posición horizontal */
+    margin-top: -195px; /* Ajusta la posición vertical */
+}
+
+.rectangulo-verde {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del div */
+    display: block;
+}
+
+.texto-rectangulo-verde {
+    position: absolute;
+    top: 30%;
+    left: 20px; /* Mueve el texto más a la izquierda */
+    transform: translateY(-50%); /* Solo centra verticalmente */
+    color: black; /* Texto en negro */
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.texto-rectangulo-verde h3 {
+    font-size: 70px; /* Tamaño del número */
+    font-weight: bold;
+    margin-bottom: 1px; /* Espacio entre título y descripción */
+}
+
+.texto-rectangulo-verde p {
+    font-size: 20px; /* Tamaño de la descripción */
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7); /* Color gris oscuro */
+    margin: 0; /* Elimina el margen extra */
+}
+
+/*logo de los cubos*/
+.tag-container {
+    position: absolute;
+    top: 70px;
+    right: 500px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    z-index: 1000; /* Asegura que el contenedor esté por encima de la imagen */
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1001; /* Asegura que las etiquetas estén aún más arriba */
+}
+
+.tag img {
+    width: 25px;
+    height: 25px;
+}
+
+.boton-leer {
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end; /* Alinea el contenido en la parte inferior */
+    gap: 8px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.icono-flecha {
+    width: 16px;
+    height: 16px;
+}
+
+.clientes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #f8f8f8; /* Opcional, ajusta si es necesario */
+}
+
+.clientes img {
+    width: 250px;
+    max-height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+.recuadro2 {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
+    max-width: 1400px;
+    margin: 40px auto;
+    align-items: flex-start;
+    gap: 0px;
+    height: 1050px; /* Permite que la altura se ajuste al contenido */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.recuadro2 h1 {
+    flex: 1; /* Hace que el texto se ajuste automáticamente */
+    max-width: 50%; /* Ajusta el ancho máximo del texto */
+    font-size: 4.5rem; /* Ajusta el tamaño del texto */
+    margin-top: 25px; /* Ajusta la posición vertical */
+    margin-left: 30px; /* Ajusta la posición horizontal */
+}
+
+.highlight {
+    background-color: #b7f8c9;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline; /* Asegura que el fondo respete el tamaño del texto */
+    line-height: 1.2; /* Reduce el espacio entre líneas */
+}
+
+.recuadro2 p{
+    flex: 1; /* Hace que el texto se ajuste automáticamente */
+    max-width: 50%; /* Ajusta el ancho máximo del texto */
+    font-size: 1.3rem; /* Ajusta el tamaño del texto */
+    margin-top: -10px; /* Ajusta la posición vertical */
+    margin-left: 30px; /* Ajusta la posición horizontal */
+}
+
+/* Contenedor del chat */
+.chat-card {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-left: 630px; /* Ajusta la posición horizontal */
+    margin-top: -400px; /* Ajusta la posición vertical */
+}
+
+/* Información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 125px; /* Ajusta la posición horizontal */
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Botón verde */
+.reset-password {
+    background-color: #00d26a;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    width: 80%;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-left: 60px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Chat Box */
+.chat-box {
+    background-color: white;
+    border-radius: 15px;
+    padding: -30px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.bot-message {
+    background-color: rgb(255, 255, 255); /* Fondo gris claro */
+    border-radius: 12px; /* Bordes más redondeados */
+    height: 125px;
+
+    padding: 15px;
+    box-shadow: none; /* Eliminar sombras para un diseño más limpio */
+}
+
+.bot-message p {
+    font-size: 14px;
+    max-width: 95%;
+    margin-top: 3px;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.7); /* Negro con opacidad del 70% */
+    line-height: 1.3; /* Mayor espaciado entre líneas para mejor lectura */
+    font-weight: 400; /* Ajustar grosor de la letra */
+}
+
+
+/* Bot Información */
+.bot-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.bot-icon-container {
+    width: 35px; /* Ajusta el tamaño del círculo */
+    height: 35px;
+    background-color: black; /* Color de fondo negro */
+    border-radius: 50%; /* Hace que sea un círculo */
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-icon {
+    width: 22px; /* Ajusta el tamaño del icono */
+    height: 22px;
+}
+
+.bot-name{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 1px;
+}
+/* Pie del chat */
+.chat-footer {
+    margin-top: 15px;
+}
+
+.chat-footer h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.chat-footer p {
+    font-size: 15px;
+    color: gray;
+    max-width: 95%;
+    margin-left: 2px;
+    margin-top: -10px;
+    line-height: 1.4;
+}
+
+
+/* Contenedor del chat */
+.chat-card2 {
+    background-color: #c0ffd8;
+    margin-top: -500px;
+    margin-left: 1030px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative; /* Necesario para el efecto de desvanecimiento */
+}
+
+/* Efecto de desvanecimiento en la parte inferior */
+.chat-card2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Tamaño del efecto */
+    background: linear-gradient(to bottom, rgba(192, 255, 216, 0) 0%, rgba(192, 255, 216, 1) 100%);
+    border-radius: 30px; /* Para que el efecto se adapte a la caja */
+    pointer-events: none; /* No afecta la interacción */
+}
+
+/* Estilo del título */
+.titulo h2 {
+    font-size: 29px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.titulo p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    max-width: 100%; /* Asegura que el texto no se desborde */
+    line-height: 1.3;
+    margin-left: 2px;
+    margin-top: -10px;
+
+}
+.live-chat-box {
+    background-color: #c0ffd8; /* Color verde claro */
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho */
+    height: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+    margin-top: -560px;
+    margin-left: 1030px;
+}
+
+.live-chat-title {
+
+    width: 100%; /* Asegurar que ocupe todo el ancho del contenedor */
+}
+
+.live-chat-title h2 {
+    font-size: 25px; /* Ajusta el tamaño del título */
+    font-weight: bold;
+}
+
+.live-chat-title p {
+    font-size: 20px;
+    max-width: 90%; /* Evita que el texto se haga demasiado ancho */
+    margin: 0 auto; /* Centra el párrafo */
+}
+
+
+/* Contenedor de los mensajes */
+.live-chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espaciado entre mensajes */
+    margin-top: 10px;
+}
+
+/* Mensaje individual */
+.live-message {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 270px;
+    height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del usuario */
+.live-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* Barra gris del mensaje */
+.live-message-content {
+    flex: 1;
+    height: 14px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+/* Contenedor principal */
+.insights-card {
+    background-color: #00e676;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    margin-left: 1030px;
+}
+
+
+/* Contenedor del círculo de progreso */
+.progress-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* SVG del círculo */
+svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+/* Círculo de fondo */
+.bg-circle {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 10;
+}
+
+/* Círculo de progreso */
+.fg-circle {
+    fill: none;
+    stroke: black;
+    stroke-width: 10;
+    stroke-dasharray: 283;
+    stroke-dashoffset: calc(283 - (12.5 * 283) / 100);
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Número del porcentaje */
+.percentage {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* Texto debajo del porcentaje */
+.subtext {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -80px;
+}
+
+/* Título */
+h2 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/* Párrafo */
+.insights-card p {
+    font-size: 18px;
+    max-width: 120%; /* Permite que el texto tenga más espacio */
+    line-height: 1.5; /* Asegura una mejor separación */
+    margin-top: 15px;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    min-height: auto;
+}
+
+
+/* Estilos generales de la tarjeta */
+.communication-card {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 20px;
+    width: 300px;
+    height: 280px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: -330px;
+    margin-left: 630px;
+}
+
+/* Título */
+.communication-card h2 {
+    font-size: 25px;
+    margin-left: 8px;
+    margin-top: 9px;
+    text-align: left;
+}
+
+/* Texto */
+.communication-card p {
+    font-size: 15px;
+    margin-left: 8px;
+    margin-top: -10px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    max-width: 100%;
+}
+
+/* Contenedor de iconos */
+.icons {
+    position: relative;
+    width: 200px; /* Ajustar según el tamaño del diseño */
+    height: 200px;
+    margin-left: 20px; /* Para alineación con el texto */
+}
+
+/* Iconos individuales */
+.icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+/* Icono central (más grande) */
+.icons img:nth-child(3) { 
+    width: 40px;  /* Aumentar tamaño */
+    height: 40px;
+    top: 30%; 
+    left: 65%; 
+    transform: translate(-50%, -50%); 
+}
+
+/* Iconos alrededor en forma de pentágono */
+.icons img:nth-child(1) { 
+    top: 5px; 
+    left: 10%; 
+    transform: translateX(-50%); /* Superior */
+}
+
+.icons img:nth-child(2) { 
+    top: 56%; 
+    left: 30px; 
+    transform: translateY(-50%); /* Izquierda */
+}
+
+.icons img:nth-child(4) { 
+    top: 55%; 
+    right: -30px; 
+    transform: translateY(-50%); /* Derecha */
+}
+
+.icons img:nth-child(5) { 
+    bottom: 135px; 
+    left: 120%; 
+    transform: translateX(-50%); /* Inferior */
+}
+
+/* Efecto hover */
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.integration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -85px;
+}
+
+.integration-card {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cuadro-blanco {
+    width: 580px;
+    height: 450px;
+    border-radius: 15px;
+    margin-top: -400px;
+    margin-left: 20px;
+}
+
+.integration-icons {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.integration-icon {
+    border-radius: 50%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin-top: -30px;
+}
+
+/* Tamaños individuales según la imagen de referencia */
+.integration-icon1 {  /* Notion (pequeño) */
+    width: 55px;
+    height: 55px;
+    top: -50px;
+    left: -110px;
+}
+
+.integration-icon2 {  /* Evernote (pequeño) */
+    width: 50px;
+    height: 50px;
+    top: -20px;
+    right: -30px;
+}
+
+.integration-icon3 {  /* Google Meet (grande) */
+    width: 80px;
+    height: 80px;
+    top: 60px;
+    left: 10px;
+}
+
+.integration-icon4 {  /* Microsoft Teams (pequeño) */
+    width: 65px;
+    height: 65px;
+    top: 50px;
+    right: -160px;
+}
+
+.text-content {
+    margin-top: 100px;
+    padding: 10px;
+    margin-top: -150px;
+    margin-left: -50px;
+}
+
+/* Título */
+.text-content h2 {
+    font-size: 23px;
+    margin-left: 70px;
+    margin-top: -20px;
+    text-align: left;
+}
+
+/* Texto */
+.text-content p {
+    font-size: 17px;
+    margin-left: 70px;
+    margin-top: -30px;
+    color: rgba(66, 66, 66, 0.685);
+    text-align: left;
+    max-width: 100%;
+}
+
+
+.highlighted-section {
+
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 40px; /* Espacio entre la caja y el h1 */
+}
+
+.rounded-box {
+    background: #f8f9fa;
+    padding: 20px 25px;
+    border-radius: 0px; /* Suaviza las esquinas */
+    width: 400px; /* Establece un ancho fijo */
+    min-height: 300px; /* Ajusta la altura mínima */
+    margin-top: -40px;
+    margin-left: -40px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0; /* Evita que la caja se reduzca */
+}
+
+.rounded-box p {
+    font-size: 19px;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-top: 60px;
+    max-width: 100%; /* Asegura que el texto no sobresalga */
+}
+
+.cta-button {
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding: 12px 20px; /* Reduce el padding para evitar que se vea demasiado grande */
+    width: 100%; /* Ocupará todo el ancho disponible */
+    max-width: 300px; /* Ajusta el ancho máximo para evitar que sea demasiado grande */
+    border-radius: 25px;
+    margin-left: 35px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.cta-button:hover {
+    background: #222;
+}
+
+
+.highlighted-section {
+    margin-left: 120px;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: white;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0px;
+    max-width: 1400px;
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cta-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -250px;
+    margin-top: -10px;
+}
+
+.main-content h1 {
+    font-size: 60px;
+}
+
+.highlight {
+    background-color: #bcfcdc ; /* Color verde resaltado */
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.icon-container {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-card:first-child {
+    background: #f8f9fa; /* Color de fondo solo para el primer cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 500px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card:not(:first-child) {
+    background: none; /* Elimina el fondo de los demás */
+    padding: 15px 20px;
+}
+
+.info-card h3 {
+    font-size: 22px; /* Agranda el título */
+    font-weight: bold;
+}
+
+.info-card p {
+    font-size: 18px; /* Agranda el texto del párrafo */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.chat-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+/*---------------------------------------------------------------*/
+/* Sección del chat */
+.chat-section {
+    margin-top: -750PX;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contenedor principal */
+.chat-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    padding: 20px;
+    margin-left: -770px;
+}
+.fondo{
+    margin-top: 30px;
+    width: 800px;
+    height: 600px;
+    margin-left: -70px;
+    border-radius: 30px;
+}
+/* Cabecera del chat */
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.chat-header h2{
+    margin-left: -00px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Iconos del chat */
+.chat-icon-container {
+    width: 50px;  /* Tamaño fijo */
+    height: 50px;
+    display: flex;
+    border-radius: 40%;
+    background-color:  black;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon-container {
+    width: 50px;  /* Tamaño fijo */
+    height: 50px;
+    display: flex;
+    margin-left: 30px;
+    border-radius: 40%;
+    background-color:  black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tamaño correcto de los iconos */
+.chat-icon {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; /* Evita que la imagen se deforme */
+    flex-shrink: 0; /* Evita que se reduzca si el espacio cambia */
+}
+
+.user-icon {
+    width: -10px; 
+    height: -10px;
+    border-radius: 40%;
+    margin-left: 0px;
+
+
+}
+
+/* Información del chat */
+.chat-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.chat-info h2 {
+    font-size: 18px;
+    margin-left: -200px;
+    margin: 0;
+}
+
+.status {
+    font-size: 12px;
+    color: green;
+}
+
+/* Cuerpo del chat */
+.chat-body {
+    margin-top: 15px;
+}
+
+/* Mensajes */
+.user-message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+.user-message h2{
+    font-size: 10px;
+
+}
+.user-message p{
+    font-size: 18px;
+    margin-left: -180px;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    flex-grow: 1;
+    max-width: 80%;
+}
+
+.message-box h2{
+    font-size: 25px;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+/* Botones de acción */
+.chat-actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.chat-button {
+    background: white;
+    border: 1px solid #00bfa5;
+    color: #00bfa5;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.chat-button:hover {
+    background: #00bfa5;
+    color: white;
+}
+
+/* Campo de entrada */
+.chat-input {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+.chat-input input {
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.emoji, .attachment {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+/*++++++++++++++++++++++++++++*/
+/* Contenedor principal */
+.template-section {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Información del título y categorías */
+.template-info {
+    flex: 1;
+}
+
+.template-info h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #b2f5ea;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Categorías (botones) */
+.categories {
+    margin: 20px 0;
+}
+
+.categories button {
+    border: 1px solid black;
+    background: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Contenedor de tarjetas */
+.template-container {
+    flex: 2;
+}
+
+.template-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilos de cada tarjeta */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botón negro */
+.black-button {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+}
+
+/*cuarto cuadro*/
+/* Estilos generales */
+.custom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.custom-text-section {
+    flex: 1;
+    max-width: 500px; /* Ajusta el ancho para evitar que el texto se divida en demasiadas líneas */
+}
+
+.custom-text-section h1 {
+    margin-top: 150px;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: -90px;
+    line-height: 1.2; /* Reduce el espacio entre líneas */
+    display: inline-block; /* Asegura que el título no se expanda a toda la línea */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.custom-highlight {
+    background-color: #C5FFE1; /* Color verde pastel */
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block; /* Permite que el fondo solo cubra el texto */
+}
+
+/* Botones de categorías */
+.custom-categories {
+    margin-top: -10px;
+    max-width: 500px;
+    margin-left: -90px;
+}
+
+.custom-btn {
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.custom-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* Contenedor de tarjetas */
+.custom-cards-container {
+    margin-top: 160px;
+    display: flex;
+    gap: 20px;
+    flex: 2;
+}
+
+.custom-card {
+    background: white;
+    border-radius: 20px;
+    margin-left: 100px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ajuste para la imagen de fondo */
+.custom-card img {
+    width: 100%;
+    height: 150px; /* Ajusta según necesites */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: block;
+}
+
+/* Contenedor del chat, ahora dentro de la imagen */
+.custom-chat-box {
+    position: absolute;
+    top: 65px; /* Ajusta la posición según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+/* Mensajes dentro del chat */
+
+.custom-message, .custom-reply {
+
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Ajuste especial para las respuestas en verde */
+
+.custom-reply {
+    font-size: 14px;
+    background: #00C853; /* Color verde similar al ejemplo */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.custom-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.custom-card p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    text-align: left; 
+}
+
+/* Botón de las tarjetas */
+.custom-card .custom-btn {
+    background: black;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.custom-card .custom-btn:hover {
+    background: #00ff88;
+    color: black;
+}
+/* quinto cuadro*******************************************************************/
+
+.testimonial-container {
+
+    position: relative;
+    width: 1490px;
+    height: 1490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centra el contenido */
+}
+.background-frame {
+    margin-top: -190px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Asegura que la imagen esté siempre centrada */
+
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 40px;
+    position: absolute;
+}
+
+.testimonial-text {
+    
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.testimonial-text h1 {
+    margin-top: -350PX;
+    line-height: 1.5; /* Ajusta la altura entre líneas */
+    margin-left: -50px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.testimonial-text p {
+    margin-top: -270px;
+    margin-left: 900px;
+    font-size: 1.5rem;
+    color: #666;
+    max-width: 1500px;
+}
+
+.testimonial-body {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+
+.background-verde{
+    margin-top: -150px;
+    margin-left: 200px;
+    width: 850px;
+}
+
+.testimonial-nav {
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 400px; /* Ajuste para mejor alineación */
+    padding: 10px 0;
+    border-top: 3px solid #000000; /* Línea superior para separación */
+}
+
+.nav-button {
+    margin-left: -800px;
+    background: transparent; /* Fondo transparente */
+    color: black;
+    border: 1px solid black; /* Borde negro */
+    padding: 10px 14px; /* Ajustar tamaño */
+    border-radius: 50px; /* Bordes más redondeados */
+    font-weight: bold;
+}
+
+.more-testimonials {
+
+    background: black;
+    color: white;
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 10px 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.more-testimonials::after {
+    content: "↗"; /* Agrega el ícono de flecha */
+    font-size: 14px;
+}
+
+.more-testimonials {
+    background: black;
+    color: white;
+}
+.testimonial-tag p{
+    line-height: 1.2; /* Ajusta la altura entre líneas */
+    max-width: 800px;
+    text-align: left;
+    margin-left: 230px;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.testimonial-tag h3{
+    margin-top: -350px;
+    margin-left: 290px;
+    color: black;
+    font-weight: bold;
+}
+/* Capa trasera */
+.fondocirculo{
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.fondocirculolinea {
+    top: 16%;
+    margin-left: 550px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: absolute;
+    left: 20px;
+    z-index: 0;
+}
+
+.testimonial-card {
+    position: relative;
+    width: 280px; /* Ajusta según sea necesario */
+    height: 280px;
+    
+}
+
+.testimonial-card img {
+    margin-top: -115px;
+    margin-left: -90px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+    filter: brightness(0.7); /* Oscurece un poco la imagen */
+}
+
+.testimonial-info {
+    line-height: 1.8; /* Ajusta la altura entre líneas */
+    position: relative;
+    margin-top: -120px;
+    margin-left: -80px;
+    bottom: 20px; /* Ajusta la posición del texto */
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejor visibilidad */
+
+}
+
+.testimonial-info h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce el espacio entre el título y el párrafo */
+}
+
+.testimonial-info p {
+    font-size: 12px;
+    margin: 0; /* Elimina el margen superior */
+}
+
+
+/************************sexto texto***************************************/
+.custom-banner {
+
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.sextocuadro {
+    margin-top: -400px;
+    position: absolute;
+    top: 0;
+    right: -110px;
+    width: 1470px;
+    height: 500px;
+    z-index: -1;
+}
+
+.content {
+    max-width: 1500px;
+    margin-top: -690px;
+}
+
+.content h1 {
+    margin-left: -80px;
+    font-size: 3.9rem;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-left: -75px;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-top: -60px;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 15px; 
+    width: 100%; 
+}
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Asegura que el texto quede alineado a la izquierda */
+    width: 1300px;
+}
+
+
+.btn {
+    margin-left: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center; 
+}
+
+
+.btn.black {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.btn.black:hover {
+    background: #333;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn.outline:hover {
+    background: black;
+    color: white;
+}
+/************************************pie de pagina*************************************/
+.footer {
+    margin-top: -150px;
+    margin-left: 130px;
+    background-color: #111;
+    color: white;
+    padding: 40px 20px;
+    width: 1430px;
+    height: 300px;
+    border-radius: 30px;
+    max-width: 1500px;
+}
+
+.footer-container {
+    padding: 30px 40px;
+    border-radius: 20px;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    min-width: 150px;
+}
+
+.footer-links h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.company-info {
+    max-width: 300px;
+}
+
+.company-info h2 {
+    font-size:3rem ;
+    font-weight: bold;
+}
+.company-info p {
+    font-size:12px ;
+
+}
+
+
+hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+
+.social-links button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.social-links button:hover {
+    background: white;
+    color: black;
+}
+
+.copyright {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/**************animacion************************/
+/* Ocultar elementos inicialmente */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Cuando entren en la vista, se mostrarán */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Oculta la barra flotante de Google Translate */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* Oculta el logo y otros elementos */
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-gadget-simple img {
+    display: none !important;
+}
+
+/* Ajusta el botón para que se vea limpio */
+#google_translate_element {
+    display: inline-block;
+    border: none;
+}
+/*boton de traducir*-****************/
+.translate-link {
+    text-decoration: none; /* Quitar el subrayado del enlace */
+}
+
+.translate-button {
+    background-color: #b7f8c9; /* Color similar al resaltado */
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.translate-button:hover {
+    background-color: #a0e6b3; /* Un verde más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Pequeño efecto de aumento */
+}
+
+.translate-button:active {
+    background-color: #8fd6a3; /* Color al hacer clic */
+    transform: scale(0.98);
+}
