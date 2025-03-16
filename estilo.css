@@ -1,19 +1,15 @@
-/* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f3f3;
 }
 
-/* Navbar principal */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
 }
-
-/* Logo y nombre */
 .nav-left {
     display: flex;
     align-items: center;
@@ -30,7 +26,6 @@ body {
     font-family: Helvetica;
 }
 
-/* Menú central */
 .menu {
     display: flex;
     list-style: none;
@@ -50,7 +45,6 @@ body {
     color: #007bff;
 }
 
-/* Sección derecha (Login + Botón) */
 .nav-right {
     display: flex;
     align-items: center;
@@ -64,7 +58,6 @@ body {
     font-size: 16px;
 }
 
-/* Botón "Book a demo" */
 .btn-demo {
     background-color: #2dff81;
     color: black;
@@ -1848,7 +1841,6 @@ h2 {
 
 }
 
-
 hr {
     border: 0.5px solid rgba(255, 255, 255, 0.2);
 }
@@ -1894,46 +1886,43 @@ hr {
     opacity: 1;
     transform: translateY(0);
 }
-/* Oculta la barra flotante de Google Translate */
 .goog-te-banner-frame {
     display: none !important;
 }
 
-/* Oculta el logo y otros elementos */
 .goog-logo-link,
 .goog-te-gadget span,
 .goog-te-gadget-simple img {
     display: none !important;
 }
 
-/* Ajusta el botón para que se vea limpio */
 #google_translate_element {
     display: inline-block;
     border: none;
 }
 
-/*boton de traducir*-****************/
+/****boton de traducir******/
 .translate-link {
-    text-decoration: none; /* Quitar el subrayado del enlace */
+    text-decoration: none; 
 }
 
 .translate-button {
-    background-color: #b7f8c9; /* Color similar al resaltado */
+    background-color: #00ff88; 
     border: none;
     padding: 12px 24px;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .translate-button:hover {
-    background-color: #a0e6b3; /* Un verde más oscuro al pasar el mouse */
-    transform: scale(1.05); /* Pequeño efecto de aumento */
+    background-color: #00ff88; 
+    transform: scale(1.05);
 }
 
 .translate-button:active {
-    background-color: #8fd6a3; /* Color al hacer clic */
+    background-color: #00ff88; 
     transform: scale(0.98);
 }
