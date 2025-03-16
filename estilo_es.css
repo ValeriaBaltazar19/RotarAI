@@ -1,11 +1,8 @@
-/* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f3f3;
 }
-
-/* Navbar principal */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,7 +10,6 @@ body {
     padding: 15px 40px;
 }
 
-/* Logo y nombre */
 .nav-left {
     display: flex;
     align-items: center;
@@ -30,7 +26,6 @@ body {
     font-family: Helvetica;
 }
 
-/* Menú central */
 .menu {
     display: flex;
     list-style: none;
@@ -50,7 +45,6 @@ body {
     color: #007bff;
 }
 
-/* Sección derecha (Login + Botón) */
 .nav-right {
     display: flex;
     align-items: center;
@@ -1914,7 +1908,7 @@ hr {
 }
 
 .translate-button {
-    background-color: #b7f8c9; 
+    background-color: #00ff88; 
     border: none;
     padding: 12px 24px;
     font-size: 18px;
@@ -1925,11 +1919,11 @@ hr {
 }
 
 .translate-button:hover {
-    background-color: #a0e6b3; 
+    background-color: #00ff88;
     transform: scale(1.05); 
 }
 
 .translate-button:active {
-    background-color: #8fd6a3; /* Color al hacer clic */
+    background-color: #00ff88; 
     transform: scale(0.98);
 }
