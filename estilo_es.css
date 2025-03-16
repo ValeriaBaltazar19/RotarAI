@@ -1,11 +1,11 @@
-
+/* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f3f3;
 }
 
-
+/* Navbar principal */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@ body {
     padding: 15px 40px;
 }
 
-
+/* Logo y nombre */
 .nav-left {
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@ body {
     color: #007bff;
 }
 
-
+/* Sección derecha (Login + Botón) */
 .nav-right {
     display: flex;
     align-items: center;
@@ -80,6 +80,7 @@ body {
     cursor: pointer;
 }
 
+/* Imagen dentro del botón */
 .icon-flecha {
     width: 16px;
     height: auto;
@@ -89,6 +90,7 @@ body {
     background-color: #00cc55;
 }
 
+/* Contenedor principal */
 .recuadro {
     background-color: white;
     padding: 30px;
@@ -100,6 +102,7 @@ body {
     min-height: 800px;
 }
 
+/* Título con resaltado */
 h1 {
     font-size: 50px;
 }
@@ -112,14 +115,14 @@ h1 {
 .title-toggle-container {
     display: inline-flex;
     align-items: center;
-    gap: 5px; 
+    gap: 5px; /* Reduce el espacio entre texto y toggle */
 }
 
 .toggle-container {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    position: relative;
+    justify-content: center; /* Centrar */
+    position: relative; /* 🔥 Asegurar que todo sea relativo a este */
     width: 60px;
     height: 30px;
 }
@@ -132,31 +135,33 @@ h1 {
     position: absolute;
 }
 
-
+/* Capa trasera */
 .toggle-back {
     top: -25%;
     width: 130px;
     height: 54px;
     border: 1px solid black;
-    border-left-width: 9px;  
+    border-left-width: 9px;  /* Engorda más del lado izquierdo */
     border-radius: 50px;
     position: absolute;
     left: 20px;
     z-index: 0;
 }
 
+/* Capa del medio */
 .toggle-middle {
     top: -25%;
     width: 86px;
     height: 53px;
     border: 1px solid black;
-    border-left-width: 9px; 
+    border-left-width: 9px; /* Un poco menos gordo que el back */
     border-radius: 50px;
     position: absolute;
     left: 40px;
     z-index: 1;
 }
 
+/* Toggle principal (Negro con logo) */
 .toggle {
     top: -25%;
     left: 8px;
@@ -168,6 +173,7 @@ h1 {
     z-index: 2;
 }
 
+/* Imagen dentro del toggle */
 .toggle-circle {
     width: 35px;
     height: 35px;
@@ -179,11 +185,11 @@ h1 {
 .imagen-curva {
     margin-top: -300px;
     clip-path: url(#clip-custom);
-    transform: scaleX(2.2) scaleY(1.6) translateX(140px);
-    width: 100%; 
-    max-width: 1000px; 
-    height: auto; 
-    display: block; 
+    transform: scaleX(2.2) scaleY(1.6) translateX(140px); /* Mueve la imagen a la izquierda */
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 1000px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios extra */
 }
 .contenedor {
     position: relative;
@@ -192,14 +198,14 @@ h1 {
     align-items: center;
 }
 .texto h1{
-    flex: 1; 
-    max-width: 50%; 
-    font-size: 4rem; 
+    flex: 1; /* Hace que el texto se ajuste automáticamente */
+    max-width: 50%; /* Ajusta el ancho máximo del texto */
+    font-size: 4rem; /* Ajusta el tamaño del texto */
 }
 .texto p{
-    flex: 1; 
-    max-width: 50%; 
-    font-size: 1.3rem; 
+    flex: 1; /* Hace que el texto se ajuste automáticamente */
+    max-width: 50%; /* Ajusta el ancho máximo del texto */
+    font-size: 1.3rem; /* Ajusta el tamaño del texto */
 }
 .boton-play {
     background-color: #04fc84 ;
@@ -207,39 +213,39 @@ h1 {
     border: none;
     padding: 17px 65px;
     font-size: 15px;
-    font-family: "Arial Black"; 
+    font-family: "Arial Black"; /* Cambia la fuente aquí */
     border-radius: 20px;
     cursor: pointer;
     position: absolute;
-    bottom: -95px; 
+    bottom: -95px; /* Ajusta la posición debajo de la imagen */
     left: 69%;
     transform: translateX(70%);
 }
 
 .rectangulo {
     clip-path: url(#clip-rectangulo);
-    transform: scaleX(1.6) scaleY(2.2) translateX(-35px); 
-    width: 100%; 
-    max-width: 1000px; 
-    height: auto; 
-    display: block;
+    transform: scaleX(1.6) scaleY(2.2) translateX(-35px); /* Mueve la imagen a la izquierda */
+    width: 100%; /* Se adapta al contenedor */
+    max-width: 1000px; /* Limita el tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacios extra */
 }
 .recuadro {
-    position: relative; 
+    position: relative; /* Contenedor padre */
 }
 
 .contenedor-molecula {
-    position: absolute; 
+    position: absolute; /* Se ajusta dentro del contenedor */
     top: 74%;
     left: 50%;
-    transform: translate(-136%, 1%);
+    transform: translate(-136%, 1%); /* Centrar */
     max-width: 100%;
 }
 
 .texto-superpuesto {
     position: absolute;
-    top: -110px; 
-    left: -150px; 
+    top: -110px; /* Ajusta la posición vertical */
+    left: -150px; /* Ajusta la posición horizontal */
     padding: 10px;
     border-radius: 8px;
     width: 80%;
@@ -249,29 +255,29 @@ h1 {
 .texto-superpuesto h3 {
     font-size: 26px;
     font-weight: bold;
-    color: black; 
+    color: black; /* Título sólido en negro */
     margin-bottom: 5px;
 }
 
 .texto-superpuesto p {  
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.5); 
+    color: rgba(0, 0, 0, 0.5); /* Texto con opacidad */
 }
 
 .contenedor-rectangulonegro {
     position: relative;
-    width: 370px; 
-    height: 195px; 
-    border-radius: 30px; 
-    overflow: hidden; 
-    margin-left: 1020px; 
-    margin-top: 120px; 
+    width: 370px; /* Ajusta según necesites */
+    height: 195px; /* Ajusta según necesites */
+    border-radius: 30px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que el contenido sobresalga */
+    margin-left: 1020px; /* Ajusta el valor según lo que necesites */
+    margin-top: 120px; /* Ajusta el valor según lo que necesites */
 }
 
 .rectangulo-negro {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover; /* Asegura que la imagen se adapte bien */
     display: block;
 }
 
@@ -1777,17 +1783,16 @@ h2 {
     background: black;
     color: white;
 }
-/************************************pie de pagina*************************************/
+/************************************FOOTER*************************************/
 .footer {
-    margin-top: -150px;
-    margin-left: 130px;
+    margin: 0 auto; 
     background-color: #111;
     color: white;
     padding: 40px 20px;
-    width: 1430px;
-    height: 300px;
-    border-radius: 30px;
+    width: 100%; 
     max-width: 1500px;
+    border-radius: 30px;
+    text-align: center; 
 }
 
 .footer-container {
@@ -1905,23 +1910,23 @@ hr {
 }
 /*boton de traducir*-****************/
 .translate-link {
-    text-decoration: none; /* Quitar el subrayado del enlace */
+    text-decoration: none; 
 }
 
 .translate-button {
-    background-color: #b7f8c9; /* Color similar al resaltado */
+    background-color: #b7f8c9; 
     border: none;
     padding: 12px 24px;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px; 
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .translate-button:hover {
-    background-color: #a0e6b3; /* Un verde más oscuro al pasar el mouse */
-    transform: scale(1.05); /* Pequeño efecto de aumento */
+    background-color: #a0e6b3; 
+    transform: scale(1.05); 
 }
 
 .translate-button:active {
