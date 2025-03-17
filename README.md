@@ -1,5 +1,5 @@
 # RotarAI
-Pagina Web del Caso 2, link de la pagina https://fafb-161-132-126-133.ngrok-free.app/index/pagina_1_Ingles.html
+Pagina Web del Caso 2, link de la pagina https://7083-161-132-126-133.ngrok-free.app/index/pagina_1_Ingles.html
 
 Descripción
 Esta página web está dedicada a Rotar AI, una plataforma que ofrece soluciones de chatbot impulsadas por inteligencia artificial (IA) para mejorar la atención al cliente. Utiliza tecnología avanzada, como GPT-4, para optimizar la comunicación y reducir la carga de trabajo del personal.
